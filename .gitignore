@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+examples/node_modules/
+
+# IDE files
+.history
+
+# build output
+lib/
+
+.DS_Store

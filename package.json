@@ -1,0 +1,39 @@
+{
+  "name": "react-draggable-layer",
+  "version": "1.0.4",
+  "description": "基于React Hooks开发的可拖拽弹层",
+  "main": "lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linxiangjun/react-draggable-layer.git"
+  },
+  "author": "linxiangjun <www.linxiangjun.com> (https://github.com/linxiangjun/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linxiangjun/react-draggable-layer/issues"
+  },
+  "homepage": "https://github.com/linxiangjun/react-draggable-layer#readme",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@babel/preset-react": "7.8.3",
+    "@babel/preset-typescript": "7.8.3",
+    "@emotion/core": "^10.0.27",
+    "@types/react": "16.9.11",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "typescript": "3.7.5"
+  }
+}

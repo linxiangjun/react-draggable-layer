@@ -10,8 +10,25 @@
 <a href="https://www.npmjs.com/package/react-draggable-layer">
   <img src="https://img.shields.io/bundlephobia/min/react-draggable-layer" alt="npm size" />
 </a>
+<a href="https://www.npmjs.com/package/react-draggable-layer">
+  <img src="https://img.shields.io/npm/l/react-draggable-layer" alt="npm size" />
+</a>
 
 </div>
+
+## Example
+
+```bash
+# install project packages
+npm install
+
+# install example packages
+cd examples
+npm install
+
+# run start
+npm run start
+```
 
 ## Installation
 

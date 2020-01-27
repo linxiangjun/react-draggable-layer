@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import DraggableLayer from "../../lib";
+import DraggableLayer from "react-draggable-layer";
 
 const App = () => (
   <div>

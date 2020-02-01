@@ -1,6 +1,6 @@
 <div align="center">
 
-![1MnWxf.gif](https://s2.ax1x.com/2020/01/28/1MnWxf.gif)
+![效果动画](https://s2.ax1x.com/2020/01/28/1MnWxf.gif)
 
 </div>
 

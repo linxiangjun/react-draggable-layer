@@ -134,6 +134,12 @@ const DraggableLayer: React.FC<DraggableLayerProps> = props => {
       document.addEventListener("mousemove", handleMouseMove);
       document.addEventListener("mouseup", handleMouseUp);
     }
+
+    return () => {
+      headerRef.current.removeEventListener("mousedown", handleMouseDown);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
   }, []);
 
   return (

@@ -50,12 +50,14 @@ import DraggableLayer from "react-draggable-layer";
 const App = () => <DraggableLayer />;
 ```
 
-## Properties
+## API
 
-- `children` draggable layer content
-- `titleName` draggable layer title name
-- `visible` draggable show or hide
-- `onClose` invoke when the close btn clicked
+| name      | description                                                            | type      |
+| --------- | ---------------------------------------------------------------------- | --------- |
+| children  | custom draggable layer content                                         | ReactNode |
+| titleName | The draggable layer's title                                            | string    |
+| visible   | Whether the draggable layer is visible or not                          | boolean   |
+| onClose   | Specify a function that will be called when a user clicks close button | function  |
 
 # License
 

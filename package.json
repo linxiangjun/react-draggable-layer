@@ -1,6 +1,6 @@
 {
   "name": "react-draggable-layer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "基于React Hooks开发的可拖拽弹层",
   "main": "lib/index.js",
   "files": [

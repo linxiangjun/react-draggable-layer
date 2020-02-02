@@ -70,7 +70,7 @@ const content = css`
 `;
 
 interface DraggableLayerProps {
-  children?: React.ReactElement;
+  children?: React.ReactNode;
   titleName?: string;
   visible?: boolean;
   onClose?: () => void;

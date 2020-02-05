@@ -1,7 +1,7 @@
 {
   "name": "react-draggable-layer",
-  "version": "1.0.5",
-  "description": "基于React Hooks开发的可拖拽弹层",
+  "version": "1.0.6",
+  "description": "基于 TypeScript + React Hooks 开发的可拖拽弹层",
   "main": "lib/index.js",
   "files": [
     "lib/"
@@ -15,6 +15,11 @@
     "type": "git",
     "url": "git+https://github.com/linxiangjun/react-draggable-layer.git"
   },
+  "keywords": [
+    "React",
+    "TypeScript",
+    "Draggable Layer"
+  ],
   "author": "linxiangjun <www.linxiangjun.com> (https://github.com/linxiangjun/)",
   "license": "MIT",
   "bugs": {

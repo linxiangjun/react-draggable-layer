@@ -112,7 +112,7 @@ const DraggableLayer: React.FC<DraggableLayerProps> = props => {
   };
 
   const handleMouseMove = (e: MouseEvent) => {
-    if (isMouseDown) {
+    if (isMouseDown && draggableRef && draggableRef.current) {
       const x = e.clientX - initX;
       const y = e.clientY - initY;
       draggableRef.current.style.left = `${x}px`;

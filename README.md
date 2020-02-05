@@ -39,7 +39,13 @@ npm run start
 ## Installation
 
 ```bash
-npm install --save-dev react-draggable-layer
+npm install --save react-draggable-layer
+```
+
+or
+
+```bash
+yarn add react-draggable-layer
 ```
 
 ## Usage

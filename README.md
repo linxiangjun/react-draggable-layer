@@ -39,13 +39,13 @@ npm run start
 ## Installation
 
 ```bash
-npm install --save react-draggable-layer
+npm install --save @emotion/core react-draggable-layer
 ```
 
 or
 
 ```bash
-yarn add react-draggable-layer
+yarn add @emotion/core react-draggable-layer
 ```
 
 ## Usage

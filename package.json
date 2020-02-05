@@ -23,7 +23,8 @@
   "homepage": "https://github.com/linxiangjun/react-draggable-layer#readme",
   "peerDependencies": {
     "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react-dom": "^16.8.0",
+    "@emotion/core": "^10.0.27"
   },
   "devDependencies": {
     "@babel/core": "7.8.3",

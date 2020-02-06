@@ -63,6 +63,7 @@ const App = () => <DraggableLayer />;
 | children  | custom draggable layer content                                         | ReactNode |
 | titleName | The draggable layer's title                                            | string    |
 | visible   | Whether the draggable layer is visible or not                          | boolean   |
+| style     | wrapper style                                                          | object    |
 | onClose   | Specify a function that will be called when a user clicks close button | function  |
 
 # License

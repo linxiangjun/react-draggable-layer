@@ -21,6 +21,7 @@ const header = css`
   border-bottom: 1px solid #e8e8e8;
   border-radius: 4px 4px 0 0;
   user-select: none;
+  cursor: move;
 `;
 const title = css`
   margin: 0;
@@ -73,6 +74,7 @@ interface DraggableLayerProps {
   children?: React.ReactNode;
   titleName?: string;
   visible?: boolean;
+  style?: object;
   onClose?: () => void;
 }
 
@@ -81,7 +83,7 @@ let initY = 0;
 let isMouseDown = false;
 
 const DraggableLayer: React.FC<DraggableLayerProps> = props => {
-  const { children, titleName, visible, onClose } = props;
+  const { children, titleName, visible, style, onClose } = props;
   const isVisible = typeof visible === "boolean";
 
   const [draggableLayerVisible, setDraggableLayerVisible] = useState(
@@ -92,7 +94,9 @@ const DraggableLayer: React.FC<DraggableLayerProps> = props => {
   const headerRef = useRef<any>();
 
   useEffect(() => {
-    isVisible && setDraggableLayerVisible(visible as boolean);
+    if (isVisible) {
+      setDraggableLayerVisible(visible as boolean);
+    }
   }, [visible]);
 
   const handleClose = () => setDraggableLayerVisible(false);
@@ -131,21 +135,21 @@ const DraggableLayer: React.FC<DraggableLayerProps> = props => {
     if (draggableRef && headerRef) {
       initBodyPosition();
       headerRef.current.addEventListener("mousedown", handleMouseDown);
-      document.addEventListener("mousemove", handleMouseMove);
-      document.addEventListener("mouseup", handleMouseUp);
+      headerRef.current.addEventListener("mousemove", handleMouseMove);
+      headerRef.current.addEventListener("mouseup", handleMouseUp);
     }
 
     return () => {
       headerRef.current.removeEventListener("mousedown", handleMouseDown);
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
+      headerRef.current.removeEventListener("mousemove", handleMouseMove);
+      headerRef.current.removeEventListener("mouseup", handleMouseUp);
     };
   }, []);
 
   return (
     <Portal>
       {draggableLayerVisible ? (
-        <div css={container} ref={draggableRef}>
+        <div css={container} ref={draggableRef} style={style}>
           <div css={header} ref={headerRef}>
             <div css={title}>{titleName || "浮动拖拽组件"}</div>
           </div>
